@@ -1,0 +1,12 @@
+{
+  "name": "PMCsHaveEOD-SPT",
+  "version": "1.0.0",
+  "main": "src/mod.ts",
+  "license": "MIT",
+  "author": "nooky",
+  "akiVersion": "3.6.x",
+  "scripts": {
+    "setup": "npm i",
+    "build": "node ./packageBuild.ts"
+  }
+}
