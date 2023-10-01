@@ -19,11 +19,11 @@ class Mod {
       ConfigTypes.BOT
     );
 
-    bots.pmc.gameVersionWeight = {
+    bots.gameVersionWeight = {
       "edge_of_darkness": 100
     }
 
-    bots.pmc.accountTypeWeight = {
+    bots.accountTypeWeight = {
       "2": 100
     }
   }
