@@ -6,14 +6,14 @@ import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
 
 let logger: ILogger;
 let configServer: ConfigServer;
-let botConfig: IBotConfig;
+let pmcConfig: IBotConfig;
 
 
 class Mod {
   postDBLoad(container: DependencyContainer): void {
     logger = container.resolve<ILogger>("WinstonLogger");
     configServer = container.resolve<ConfigServer>("ConfigServer");
-    botConfig = configServer.getConfig<IBotConfig>(ConfigTypes.PMC);
+    pmcConfig = configServer.getConfig<IBotConfig>(ConfigTypes.PMC);
 
     const bots: IBotConfig = configServer.getConfig(
       ConfigTypes.PMC
